@@ -3,7 +3,7 @@ import pymysql
 # 数据区
 DBHOST = "localhost"
 DBUSER = "root"
-DBPASS = "myf021105"
+DBPASS = "123456"
 DBNAME = "p2a"
 
 

@@ -16,7 +16,7 @@ Driver_Path = "D:/下载/chromedriver103.exe" # 驱动地址，根据实际情况修改
 query = "AF=吉林大学软件学院 OR AF=吉林大学计算机科学与技术学院"
 DBHOST = "localhost"
 DBUSER = "root"
-DBPASS = "myf021105"
+DBPASS = "123456"
 DBNAME = "p2a"
 stimulate_times = 100
 Pap2Au = []
@@ -64,7 +64,7 @@ def institute2list(institute):
 # 连接成功返回图谱句柄 连接失败返回空对象
 def connectNeo4j():
     try:
-        graph = Graph('bolt://localhost:7687', auth=('neo4j', 'myf021105'))
+        graph = Graph('bolt://localhost:7687', auth=('neo4j', '123456'))
         graph.delete_all()
         return graph
     except:
